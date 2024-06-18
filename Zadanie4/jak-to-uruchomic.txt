@@ -1,0 +1,3 @@
+javac Zadanie4/*.java
+
+java Zadanie4.WeatherApp

@@ -1,0 +1,3 @@
+Taki .env z javascriptu tylko w javie
+
+Zmienne srodowiskowe w formacie klucz = wartosc

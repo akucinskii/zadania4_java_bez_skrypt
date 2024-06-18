@@ -1,0 +1,25 @@
+### Singleton w Javie: Zalety i Wady
+
+Zalety:
+
+- Oszczędność zasobów: Singleton umożliwia efektywne zarządzanie zasobami, takimi jak połączenia z bazą danych czy uchwyty plików, dzięki czemu unika się wielokrotnego tworzenia kosztownych obiektów.
+- Bezpieczeństwo wątków: Zapewnia wbudowane mechanizmy bezpieczeństwa wątków, zapobiegając wyścigom i uszkodzeniom danych w środowiskach wielowątkowych.
+- Centralne zarządzanie konfiguracją: Umożliwia centralne zarządzanie ustawieniami konfiguracyjnymi aplikacji, co zapewnia jednolity punkt dostępu do tych ustawień.
+
+Wady:
+
+- Stan globalny: Singleton wprowadza globalny stan w aplikacji, co może prowadzić do trudności w zrozumieniu i przewidywaniu zachowania systemu oraz utrudniać jego utrzymanie.
+- Trudności w testowaniu: Wprowadza ukryte zależności, co komplikuje testowanie jednostkowe i może wymagać stosowania mocków lub stubów.
+- Problemy z współbieżnością: Może prowadzić do dodatkowej złożoności i obciążenia wydajnościowego w środowiskach wielowątkowych.
+
+Kiedy używać:
+
+- Zarządzanie pojedynczymi zasobami, np. połączeniami z bazą danych.
+- Utrzymanie globalnego stanu aplikacji, np. konfiguracji.
+
+Kiedy unikać:
+
+- Gdy priorytetem jest testowalność i łatwość izolowania komponentów, warto rozważyć alternatywy, takie jak wstrzykiwanie zależności (Dependency Injection).
+- W aplikacjach wymagających intensywnej współbieżności z powodu potencjalnych problemów z synchronizacją.
+
+Podsumowując, Singleton ma swoje zalety i wady. Należy go używać rozważnie, analizując konkretne potrzeby projektu i ewentualne alternatywy, takie jak wstrzykiwanie zależności.
